@@ -60,11 +60,11 @@ namespace Crypto
                     Name,
                     FeeTextBox.Text,
                     USDBoughtTextBox.Text,
-                    DateTime.Parse(DateTextBox.Text),
+                    DatePicker.Value,
                     ExchangeRateTextBox.Text
                 )
                 {
-                    Date = DateTime.Parse(DateTextBox.Text)
+                    
                 };
 
                 model.ISBuying = 1;
@@ -116,10 +116,10 @@ namespace Crypto
             {
                 Output = "Your USD Bought is less than 1";
             }
-            if (DateTextBox.TextLength == 0)
-            {
-                Output = "Your date has no text";
-            }
+            //if (DateTextBox.TextLength == 0)
+            //{
+            //    Output = "Your date has no text";
+            //}
             if (!BitcoinRadioButton.Checked && 
                 !BitcoinCashRadioButton.Checked && 
                 !LiteCoinRadioButton.Checked && 
@@ -152,6 +152,11 @@ namespace Crypto
         private void WhatCryptoGroupBox_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void DatePicker_ValueChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

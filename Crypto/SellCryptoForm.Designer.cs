@@ -30,7 +30,6 @@
         {
             this.CancelButton = new System.Windows.Forms.Button();
             this.OkButton = new System.Windows.Forms.Button();
-            this.DateTextBox = new System.Windows.Forms.TextBox();
             this.DateLabel = new System.Windows.Forms.Label();
             this.USDBoughtTextBox = new System.Windows.Forms.TextBox();
             this.USDBought = new System.Windows.Forms.Label();
@@ -43,6 +42,7 @@
             this.WhatCryptoLabel = new System.Windows.Forms.Label();
             this.ExchangeRateLabel = new System.Windows.Forms.Label();
             this.ExchangeRateTextBox = new System.Windows.Forms.TextBox();
+            this.DatePicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // CancelButton
@@ -64,13 +64,6 @@
             this.OkButton.Text = "Ok";
             this.OkButton.UseVisualStyleBackColor = true;
             this.OkButton.Click += new System.EventHandler(this.OkButton_Click);
-            // 
-            // DateTextBox
-            // 
-            this.DateTextBox.Location = new System.Drawing.Point(422, 394);
-            this.DateTextBox.Name = "DateTextBox";
-            this.DateTextBox.Size = new System.Drawing.Size(172, 39);
-            this.DateTextBox.TabIndex = 27;
             // 
             // DateLabel
             // 
@@ -116,7 +109,7 @@
             // EthereumRadioButton
             // 
             this.EthereumRadioButton.AutoSize = true;
-            this.EthereumRadioButton.Location = new System.Drawing.Point(190, 206);
+            this.EthereumRadioButton.Location = new System.Drawing.Point(228, 208);
             this.EthereumRadioButton.Name = "EthereumRadioButton";
             this.EthereumRadioButton.Size = new System.Drawing.Size(130, 36);
             this.EthereumRadioButton.TabIndex = 21;
@@ -127,7 +120,7 @@
             // LiteCoinRadioButton
             // 
             this.LiteCoinRadioButton.AutoSize = true;
-            this.LiteCoinRadioButton.Location = new System.Drawing.Point(190, 164);
+            this.LiteCoinRadioButton.Location = new System.Drawing.Point(228, 166);
             this.LiteCoinRadioButton.Name = "LiteCoinRadioButton";
             this.LiteCoinRadioButton.Size = new System.Drawing.Size(121, 36);
             this.LiteCoinRadioButton.TabIndex = 20;
@@ -138,7 +131,7 @@
             // BitcoinCashRadioButton
             // 
             this.BitcoinCashRadioButton.AutoSize = true;
-            this.BitcoinCashRadioButton.Location = new System.Drawing.Point(190, 122);
+            this.BitcoinCashRadioButton.Location = new System.Drawing.Point(228, 124);
             this.BitcoinCashRadioButton.Name = "BitcoinCashRadioButton";
             this.BitcoinCashRadioButton.Size = new System.Drawing.Size(156, 36);
             this.BitcoinCashRadioButton.TabIndex = 19;
@@ -149,7 +142,7 @@
             // BitcoinRadioButton
             // 
             this.BitcoinRadioButton.AutoSize = true;
-            this.BitcoinRadioButton.Location = new System.Drawing.Point(190, 80);
+            this.BitcoinRadioButton.Location = new System.Drawing.Point(228, 82);
             this.BitcoinRadioButton.Name = "BitcoinRadioButton";
             this.BitcoinRadioButton.Size = new System.Drawing.Size(100, 36);
             this.BitcoinRadioButton.TabIndex = 18;
@@ -183,17 +176,26 @@
             this.ExchangeRateTextBox.Size = new System.Drawing.Size(172, 39);
             this.ExchangeRateTextBox.TabIndex = 33;
             // 
+            // DatePicker
+            // 
+            this.DatePicker.Location = new System.Drawing.Point(410, 394);
+            this.DatePicker.MaxDate = new System.DateTime(2022, 1, 1, 0, 0, 0, 0);
+            this.DatePicker.MinDate = new System.DateTime(2009, 1, 3, 0, 0, 0, 0);
+            this.DatePicker.Name = "DatePicker";
+            this.DatePicker.Size = new System.Drawing.Size(349, 39);
+            this.DatePicker.TabIndex = 34;
+            // 
             // SellCryptoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(766, 598);
+            this.ClientSize = new System.Drawing.Size(816, 589);
+            this.Controls.Add(this.DatePicker);
             this.Controls.Add(this.ExchangeRateTextBox);
             this.Controls.Add(this.ExchangeRateLabel);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.OkButton);
-            this.Controls.Add(this.DateTextBox);
             this.Controls.Add(this.DateLabel);
             this.Controls.Add(this.USDBoughtTextBox);
             this.Controls.Add(this.USDBought);
@@ -219,7 +221,6 @@
 
         private System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.Button OkButton;
-        private System.Windows.Forms.TextBox DateTextBox;
         private System.Windows.Forms.Label DateLabel;
         private System.Windows.Forms.TextBox USDBoughtTextBox;
         private System.Windows.Forms.Label USDBought;
@@ -232,5 +233,6 @@
         private System.Windows.Forms.Label WhatCryptoLabel;
         private System.Windows.Forms.Label ExchangeRateLabel;
         private System.Windows.Forms.TextBox ExchangeRateTextBox;
+        private System.Windows.Forms.DateTimePicker DatePicker;
     }
 }

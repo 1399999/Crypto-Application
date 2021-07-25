@@ -9,6 +9,5 @@ namespace CryptoLibrary
          BuyCryptoModel BuyCrypto(BuyCryptoModel model);
          SellCryptoModel SellCrypto(SellCryptoModel model);
          List<BuyCryptoModel> GetBuyCrypto_All();
-         //List<BuyCryptoModel> GetBy_Date();
     }
 }

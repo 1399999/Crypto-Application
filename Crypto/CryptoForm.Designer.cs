@@ -209,7 +209,7 @@
             this.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CryptoForm";
-            this.Text = "Crypto Application - version 1.0.0";
+            this.Text = "Crypto Application - version 1.0.0 rc1";
             this.Load += new System.EventHandler(this.CryptoForm_Load);
             this.Shown += new System.EventHandler(this.CryptoForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridVeiw)).EndInit();
